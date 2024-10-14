@@ -1,0 +1,11 @@
+
+paneSide = document.getElementById("pane-side");
+
+buttons = paneSize.getElementsByTagName("button");
+
+for (button of buttons) {
+    let attribute = button.getAttribute("aria-label");
+    if (attribute.startsWith("Archived")) {
+        console.log("Found");
+    }
+}

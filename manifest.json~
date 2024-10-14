@@ -1,0 +1,21 @@
+{
+  "manifest_version": 1,
+  "name": "Hide Archive in Whatsapp",
+  "version": "2.0",
+  "description": "Hide Archived Chats in Whatsapp",
+
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://web.whatsapp.com/*"
+      ]
+    }
+  ]
+}
