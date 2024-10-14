@@ -18,4 +18,5 @@ intervalLoop = setInterval(hideArchivedChats, 250);
 setTimeout(() => {
     console.log("Interval Stopped");
     clearInterval(intervalLoop);
+    setInterval(hideArchivedChats, 1000);
 }, 10000);
